@@ -9,5 +9,10 @@ public class SpringbootDemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringbootDemoApplication.class, args);
     }
+@Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(SpringbootDemoApplication.class);
+    }
+
 
 }
